@@ -1,0 +1,81 @@
+<div class="container pt-5 pb-5">
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <div class="card p-3">
+        <form>
+          <h1 class="h2 mb-4">Конвертер валют</h1>
+
+          <div class="courses">
+            <div class="course-item card card-body">
+              <div class="course-item-title">Курс USD</div>
+              <div class="course-item-value" data-value="USD">
+                {{ rateUSD }}
+              </div>
+            </div>
+            <div class="course-item card card-body">
+              <div class="course-item-title">Курс EUR</div>
+              <div class="course-item-value" data-value="EUR">
+                {{ rateEUR }}
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-1">
+            <div class="col">
+              <label for="name">Отдаю:</label>
+              <select
+                id="selectInput"
+                class="form-control"
+                (change)="OnInputCurrencyChange(selectInput.value)"
+                #selectInput
+              >
+                <option value="UAH" selected>UAH — Гривна</option>
+                <option value="USD">USD — Доллар США</option>
+                <option value="EUR">EUR — Евро</option>
+              </select>
+            </div>
+            <div class="col">
+              <label for="name">Получаю:</label>
+              <select
+                id="selectResult"
+                class="form-control"
+                (change)="OnResultCurrencyChange(selectResult.value)"
+                #selectResult
+              >
+                <option value="UAH">UAH — Гривна</option>
+                <option value="USD" selected>USD — Доллар США</option>
+                <option value="EUR">EUR — Евро</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <input
+                id="input"
+                type="number"
+                class="form-control"
+                autofocus
+                (input)="OnInputAmountChange(input.value)"
+                #input
+                value="{{ inputAmount }}"
+                min="0"
+              />
+            </div>
+            <div class="col">
+              <input
+                id="result"
+                type="number"
+                class="form-control"
+                (input)="OnResultAmountChange(result.value)"
+                #result
+                value="{{ resultAmount }}"
+                min="0"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
