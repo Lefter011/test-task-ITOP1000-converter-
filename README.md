@@ -1,27 +1,11 @@
 # TestTaskItop1000
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
+https://lefter011.github.io/test-task-ITOP1000-converter-/
 
-## Development server
+The task was to create a currency converter that will receive data on the exchange rate via the API, after which the user can convert 3 currencies (USD, EUR, UAH) using the viewer.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The application is written in Angular using TypeScript.
+![image](https://user-images.githubusercontent.com/94438982/177694635-b6ffb97a-7469-4e21-a93a-9267ff7defba.png)
+![image](https://user-images.githubusercontent.com/94438982/177694755-fe7c527f-d69d-42f2-97c9-813f5420d3c8.png)
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![image](https://user-images.githubusercontent.com/94438982/177694835-81301d5a-ad3f-48f5-a011-9c65533934b6.png)
